@@ -1,6 +1,7 @@
 package com.example.diyanfang.finalprojectadventuregame;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -42,5 +43,28 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
                 Toast.makeText(context, messageId, Toast.LENGTH_SHORT).show();
             }
         });
+
+        quizImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (quizName.getText().toString().equalsIgnoreCase("aqua city")) {
+                    context.startActivity(new Intent(context, AquaCity.class));
+                }
+            }
+        });
+
+        quizName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (quizName.getText().toString().equalsIgnoreCase("aqua city")) {
+                    context.startActivity(new Intent(context, AquaCity.class));
+                }
+
+            }
+        });
+
     }
+
 }

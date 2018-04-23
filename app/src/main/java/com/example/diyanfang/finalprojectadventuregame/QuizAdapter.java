@@ -17,7 +17,7 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizViewHolder> {
     private List<Quiz> quizzes;
     private Context context;
 
-    public QuizAdapter(List<Quiz> quizzes, Context context) {
+    public QuizAdapter(List<Quiz>quizzes, Context context) {
         this.quizzes = quizzes;
         this.context = context;
     }

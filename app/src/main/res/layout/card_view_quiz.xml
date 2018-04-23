@@ -18,6 +18,17 @@
             android:layout_marginRight="16dp"
             android:src="@drawable/aqua_city" />
 
+        <ImageView
+            android:id="@+id/lock"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/lock" />
+
         <TextView
             android:id="@+id/quiz_name"
             android:layout_width="wrap_content"
@@ -27,6 +38,8 @@
             android:text="@string/aqua_city"
             android:textColor="@color/cardview_dark_background"
             android:textSize="30sp" />
+
+
 
         <TextView
             android:id="@+id/about_this_city"
