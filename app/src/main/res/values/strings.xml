@@ -24,4 +24,9 @@
     <string name="quiz_finished_toast">Congrats! You\'ve hit this quiz!</string>
     <string name="quiz_unfinished_toast">You haven\'t done with this quiz yet.</string>
 
+    <string name="login">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+
 </resources>
