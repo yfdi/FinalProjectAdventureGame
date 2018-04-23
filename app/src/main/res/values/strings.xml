@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Final Project Adventure Game</string>
+
+    <string name="aqua_city">Aqua City</string>
+    <string name="gold_city">Gold City</string>
+    <string name="flame_city">Flame City</string>
+    <string name="desert_city">Desert City</string>
+    <string name="earth_city">Earth City</string>
+
+    <string name="about_aqua_city">Sea creatures are swimming with you.</string>
+    <string name="about_gold_city">In this city, gold is everywhere… </string>
+    <string name="about_flame_city">Fire is burning this city and turns it into a heat furnace.</string>
+    <string name="about_desert_city">It is a barren area where little rain occurs and living conditions are hostile for all the creatures.</string>
+    <string name="about_earth_city">It is consisted of water, land and people.</string>
+
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="next_button">Next</string>
+    <string name="prev_button">Previous</string>
+
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
+
+    <string name="quiz_finished_toast">Congrats! You\'ve hit this quiz!</string>
+    <string name="quiz_unfinished_toast">You haven\'t done with this quiz yet.</string>
+
+</resources>

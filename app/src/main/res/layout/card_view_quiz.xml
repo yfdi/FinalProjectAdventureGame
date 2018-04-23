@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/quiz_image"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/aqua_city" />
+
+        <TextView
+            android:id="@+id/quiz_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/quiz_image"
+            android:text="@string/aqua_city"
+            android:textSize="30sp"
+            android:textColor="@color/cardview_dark_background"
+            />
+
+        <TextView
+            android:id="@+id/about_this_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/quiz_image"
+            android:layout_below="@id/quiz_name"
+            android:layout_marginTop="8dp"
+            android:text="@string/about_aqua_city"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
