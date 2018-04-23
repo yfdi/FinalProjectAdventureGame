@@ -20,26 +20,26 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
     public TextView aboutThisCity;
     public boolean isQuizFinished;
 
-    public  QuizViewHolder(View itemView, final Context context){
+    public QuizViewHolder(View itemView, final Context context) {
         super(itemView);
-        cardView = (CardView)itemView.findViewById(R.id.card_view);
+        cardView = (CardView) itemView.findViewById(R.id.card_view);
 
-        quizImage = (ImageView)itemView.findViewById(R.id.quiz_image);
-        quizName = (TextView)itemView.findViewById(R.id.quiz_name);
-        aboutThisCity = (TextView)itemView.findViewById(R.id.about_this_city);
+        quizImage = (ImageView) itemView.findViewById(R.id.quiz_image);
+        quizName = (TextView) itemView.findViewById(R.id.quiz_name);
+        aboutThisCity = (TextView) itemView.findViewById(R.id.about_this_city);
 
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 //Toast.makeText(context, questionCountry.getText(),Toast.LENGTH_SHORT).show();
                 int messageId = 0;
                 //show the correct answer
-                if(isQuizFinished){
+                if (isQuizFinished) {
                     messageId = R.string.quiz_finished_toast;
-                }else{
+                } else {
                     messageId = R.string.quiz_unfinished_toast;
                 }
-                Toast.makeText(context,messageId,Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, messageId, Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -43,7 +43,7 @@ public class Quiz {
         isFinished = finished;
     }
 
-    public Quiz(){
+    public Quiz() {
 
     }
 

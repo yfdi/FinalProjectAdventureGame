@@ -12,24 +12,24 @@ import java.util.List;
  * Created by diyanfang on 4/22/18.
  */
 
-public class QuizAdapter  extends RecyclerView.Adapter<QuizViewHolder> {
+public class QuizAdapter extends RecyclerView.Adapter<QuizViewHolder> {
 
     private List<Quiz> quizzes;
     private Context context;
 
-    public QuizAdapter(List<Quiz>quizzes, Context context){
+    public QuizAdapter(List<Quiz> quizzes, Context context) {
         this.quizzes = quizzes;
         this.context = context;
     }
 
     @Override
-    public QuizViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
+    public QuizViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view_quiz, parent, false);
-        return new QuizViewHolder(view,context);
+        return new QuizViewHolder(view, context);
     }
 
     @Override
-    public void onBindViewHolder(QuizViewHolder holder,int position){
+    public void onBindViewHolder(QuizViewHolder holder, int position) {
         Quiz quiz = quizzes.get(position);
         holder.quizName.setText(quiz.cityName);
         holder.aboutThisCity.setText(quiz.description);
@@ -39,7 +39,7 @@ public class QuizAdapter  extends RecyclerView.Adapter<QuizViewHolder> {
     }
 
     @Override
-    public int getItemCount(){
+    public int getItemCount() {
         return quizzes.size();
     }
 }
