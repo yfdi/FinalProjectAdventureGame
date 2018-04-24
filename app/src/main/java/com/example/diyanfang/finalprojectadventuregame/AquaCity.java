@@ -25,9 +25,8 @@ public class AquaCity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent aquzQuizIntent = new Intent (AquaCity.this, GoldCity.class);
-                startActivity(aquzQuizIntent);
-
+                Intent aquaQuizIntent = new Intent (AquaCity.this, AquaCityQuiz.class);
+                startActivity(aquaQuizIntent);
             }
         });
 
