@@ -10,26 +10,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:stretchColumns="1,2,3"
-        android:layout_marginTop="50dp">
-
-        <View
-            android:layout_height="2dip"
-            android:background="#FF909090" />
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
 
         <TableRow>
             <TextView
                 android:layout_column="1"
                 android:text="Item"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTitleTheme"
+                />
             <TextView
                 android:layout_column="2"
                 android:text="Use the Item"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTitleTheme"/>
             <TextView
                 android:layout_column="3"
                 android:text="Number of Items"
                 android:gravity="right"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTitleTheme"/>
         </TableRow>
 
         <View
@@ -40,16 +42,20 @@
             <TextView
                 android:layout_column="1"
                 android:text="Scissors"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="2"
                 android:text="Use"
-                android:padding="3dip" />
+                android:gravity="center"
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="3"
                 android:text="0"
                 android:gravity="right"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
         </TableRow>
 
         <View
@@ -60,16 +66,20 @@
             <TextView
                 android:layout_column="1"
                 android:text="Junk"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="2"
                 android:text="Use"
-                android:padding="3dip" />
+                android:gravity="center"
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="3"
                 android:text="0"
                 android:gravity="right"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
         </TableRow>
 
         <View
@@ -80,16 +90,20 @@
             <TextView
                 android:layout_column="1"
                 android:text="Gold"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="2"
                 android:text="Use"
-                android:padding="3dip" />
+                android:gravity="center"
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="3"
                 android:text="0"
                 android:gravity="right"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
         </TableRow>
 
         <View
@@ -100,16 +114,20 @@
             <TextView
                 android:layout_column="1"
                 android:text="Sandwich"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="2"
                 android:text="Use"
-                android:padding="3dip" />
+                android:gravity="center"
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="3"
                 android:text="0"
                 android:gravity="right"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
         </TableRow>
 
         <View
@@ -120,16 +138,20 @@
             <TextView
                 android:layout_column="1"
                 android:text="Compass"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="2"
                 android:text="Use"
-                android:padding="3dip" />
+                android:gravity="center"
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="3"
                 android:text="0"
                 android:gravity="right"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
         </TableRow>
 
         <View
@@ -140,23 +162,32 @@
             <TextView
                 android:layout_column="1"
                 android:text="Water"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="2"
+                android:gravity="center"
                 android:text="Use"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
             <TextView
                 android:layout_column="3"
                 android:text="0"
                 android:gravity="right"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
         </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
 
         <TableRow>
             <TextView
                 android:layout_column="1"
                 android:text="Back"
-                android:padding="3dip" />
+                android:padding="3dip"
+                style="@style/InventoryTheme"/>
         </TableRow>
 
     </TableLayout>
