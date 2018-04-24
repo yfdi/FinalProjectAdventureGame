@@ -28,5 +28,8 @@ public class AquaCity extends AppCompatActivity {
             }
         });
 
+        Intent quizIntent = getIntent();
+        Quiz q = (Quiz) quizIntent.getSerializableExtra(Keys.QUIZ);
+
     }
 }

@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.Serializable;
+
 /**
  * Created by diyanfang on 4/22/18.
  */
@@ -20,7 +22,9 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
     public ImageView quizImage;
     public TextView quizName;
     public TextView aboutThisCity;
+
     public boolean isQuizFinished;
+    private Context context;
 
     public QuizViewHolder(View itemView, final Context context) {
         super(itemView);
@@ -29,20 +33,8 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
         quizName = (TextView) itemView.findViewById(R.id.quiz_name);
         aboutThisCity = (TextView) itemView.findViewById(R.id.about_this_city);
 
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //Toast.makeText(context, questionCountry.getText(),Toast.LENGTH_SHORT).show();
-                int messageId = 0;
-                //show the correct answer
-                if (isQuizFinished) {
-                    messageId = R.string.quiz_finished_toast;
-                } else {
-                    messageId = R.string.quiz_unfinished_toast;
-                }
-                Toast.makeText(context, messageId, Toast.LENGTH_SHORT).show();
-            }
-        });
+        this.context = context;
+
 
         quizImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,15 +48,35 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
             }
         });
 
-        quizName.setOnClickListener(new View.OnClickListener() {
+    }
+
+    public void bind(final Quiz quiz){
+
+        quizName.setText(quiz.cityName);
+        aboutThisCity.setText(quiz.description);
+        quizImage.setImageResource(quiz.photoId);
+        //add the value of .isFinished to the ViewHolder
+        isQuizFinished = quiz.isFinished();
+
+        cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                context.startActivity(new Intent(context, AquaCity.class));
+                //Toast.makeText(context, quizName.getText(),Toast.LENGTH_SHORT).show();
+                int messageId = 0;
+                //show the finished message
+                if (isQuizFinished) {
+                    messageId = R.string.quiz_finished_toast;
+                } else {
+                    messageId = R.string.quiz_unfinished_toast;
+                }
+                Toast.makeText(context, messageId, Toast.LENGTH_SHORT).show();
 
-//                if (quizName.getText().toString().equalsIgnoreCase("aqua city")) {
-//                    context.startActivity(new Intent(context, AquaCity.class));
-//                }
+                Quiz q = new Quiz(quiz.cityName, quiz.description, quiz.photoId, quiz.isFinished());
+                Intent quizIntent = new Intent (context, AquaCity.class);
+                quizIntent.putExtra(Keys.QUIZ, q);
+                context.startActivity(quizIntent);
+
             }
         });
     }

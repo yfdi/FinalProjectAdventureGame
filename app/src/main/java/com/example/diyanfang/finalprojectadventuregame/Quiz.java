@@ -1,10 +1,12 @@
 package com.example.diyanfang.finalprojectadventuregame;
 
+import java.io.Serializable;
+
 /**
  * Created by diyanfang on 4/22/18.
  */
 
-public class Quiz {
+public class Quiz implements Serializable {
 
     public int cityName;
     public int description;

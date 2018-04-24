@@ -31,11 +31,14 @@ public class QuizAdapter extends RecyclerView.Adapter<QuizViewHolder> {
     @Override
     public void onBindViewHolder(QuizViewHolder holder, int position) {
         Quiz quiz = quizzes.get(position);
-        holder.quizName.setText(quiz.cityName);
-        holder.aboutThisCity.setText(quiz.description);
-        holder.quizImage.setImageResource(quiz.photoId);
-        //add the value of .isFinished to the ViewHolder
-        holder.isQuizFinished = quiz.isFinished();
+
+//        holder.quizName.setText(quiz.cityName);
+//        holder.aboutThisCity.setText(quiz.description);
+//        holder.quizImage.setImageResource(quiz.photoId);
+//        //add the value of .isFinished to the ViewHolder
+//        holder.isQuizFinished = quiz.isFinished();
+
+        holder.bind(quiz);
     }
 
     @Override
