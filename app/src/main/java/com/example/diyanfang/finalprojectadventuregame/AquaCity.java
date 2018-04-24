@@ -24,7 +24,11 @@ public class AquaCity extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                manyDolphin.setImageResource(R.drawable.dolphin_tangled);
+
+                Intent aquzQuizIntent = new Intent (AquaCity.this, GoldCity.class);
+                startActivity(aquzQuizIntent);
+
+//                manyDolphin.setImageResource(R.drawable.dolphin_tangled);
             }
         });
 

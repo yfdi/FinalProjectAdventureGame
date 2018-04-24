@@ -34,23 +34,9 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
         aboutThisCity = (TextView) itemView.findViewById(R.id.about_this_city);
 
         this.context = context;
-
-
-        quizImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                (context).startActivity(new Intent(context, AquaCity.class));
-
-//                if (quizName.getText().toString().equalsIgnoreCase("aqua city")) {
-//                    context.startActivity(new Intent(context, AquaCity.class));
-//                }
-            }
-        });
-
     }
 
-    public void bind(final Quiz quiz){
+    public void bind(final Quiz quiz) {
 
         quizName.setText(quiz.cityName);
         aboutThisCity.setText(quiz.description);
@@ -71,14 +57,41 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
                     messageId = R.string.quiz_unfinished_toast;
                 }
                 Toast.makeText(context, messageId, Toast.LENGTH_SHORT).show();
-
-                Quiz q = new Quiz(quiz.cityName, quiz.description, quiz.photoId, quiz.isFinished());
-                Intent quizIntent = new Intent (context, AquaCity.class);
-                quizIntent.putExtra(Keys.QUIZ, q);
-                context.startActivity(quizIntent);
-
             }
         });
+
+        quizImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                enterCity();
+//                if (quizName.getText().toString().equalsIgnoreCase("aqua city")){
+//                    Quiz q = new Quiz(quiz.cityName, quiz.description, quiz.photoId, quiz.isFinished());
+//                    Intent quizIntent = new Intent(context, AquaCity.class);
+//                    quizIntent.putExtra(Keys.QUIZ, q);
+//                    context.startActivity(quizIntent);
+//                }
+            }
+        });
+
+        quizName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                enterCity();
+            }
+        });
+    }
+
+    public void enterCity(){
+
+        if (quizName.getText().toString().equalsIgnoreCase("aqua city")){
+            Intent quizIntent = new Intent(context, AquaCity.class);
+            context.startActivity(quizIntent);
+        } if (quizName.getText().toString().equalsIgnoreCase("gold city")){
+            Intent quizIntent = new Intent(context, GoldCity.class);
+            context.startActivity(quizIntent);
+        }
+
     }
 
 }
