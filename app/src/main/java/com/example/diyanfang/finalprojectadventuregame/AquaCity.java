@@ -28,7 +28,6 @@ public class AquaCity extends AppCompatActivity {
                 Intent aquzQuizIntent = new Intent (AquaCity.this, GoldCity.class);
                 startActivity(aquzQuizIntent);
 
-//                manyDolphin.setImageResource(R.drawable.dolphin_tangled);
             }
         });
 
