@@ -6,47 +6,160 @@
     android:layout_height="match_parent"
     tools:context="com.example.diyanfang.finalprojectadventuregame.Inventory">
 
-    <RadioGroup
-        android:id="@+id/myRadioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:background="@color/cardview_shadow_end_color"
-        android:checkedButton="@+id/checked_button"
-        android:visibility="visible">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1,2,3"
+        android:layout_marginTop="50dp">
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Scissors" />
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Junk" />
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Item"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="2"
+                android:text="Use the Item"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="3"
+                android:text="Number of Items"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Gold" />
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sandwich" />
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Scissors"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="2"
+                android:text="Use"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="3"
+                android:text="0"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Compass" />
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Water" />
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Junk"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="2"
+                android:text="Use"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="3"
+                android:text="0"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
 
-    </RadioGroup>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Gold"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="2"
+                android:text="Use"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="3"
+                android:text="0"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Sandwich"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="2"
+                android:text="Use"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="3"
+                android:text="0"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Compass"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="2"
+                android:text="Use"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="3"
+                android:text="0"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Water"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="2"
+                android:text="Use"
+                android:padding="3dip" />
+            <TextView
+                android:layout_column="3"
+                android:text="0"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_column="1"
+                android:text="Back"
+                android:padding="3dip" />
+        </TableRow>
+
+    </TableLayout>
 
     <RelativeLayout
         android:id="@+id/buttons"

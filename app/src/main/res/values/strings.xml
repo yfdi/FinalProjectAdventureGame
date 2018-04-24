@@ -26,8 +26,8 @@
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
 
-    <string name="quiz_finished_toast">Congrats! You\'ve hit this quiz!</string>
-    <string name="quiz_unfinished_toast">You haven\'t done with this quiz yet.</string>
+    <string name="quiz_finished_toast">Congrats! You\'ve hit this level!</string>
+    <string name="quiz_unfinished_toast">You haven\'t unlock this level.</string>
 
     <string name="login">Login</string>
     <string name="signUp">Sign Up</string>

@@ -1,5 +1,6 @@
 package com.example.diyanfang.finalprojectadventuregame;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.CardView;
@@ -47,9 +48,11 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
             @Override
             public void onClick(View view) {
 
-                if (quizName.getText().toString().equalsIgnoreCase("aqua city")) {
-                    context.startActivity(new Intent(context, AquaCity.class));
-                }
+                (context).startActivity(new Intent(context, AquaCity.class));
+
+//                if (quizName.getText().toString().equalsIgnoreCase("aqua city")) {
+//                    context.startActivity(new Intent(context, AquaCity.class));
+//                }
             }
         });
 
@@ -57,13 +60,13 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
             @Override
             public void onClick(View view) {
 
-                if (quizName.getText().toString().equalsIgnoreCase("aqua city")) {
-                    context.startActivity(new Intent(context, AquaCity.class));
-                }
+                context.startActivity(new Intent(context, AquaCity.class));
 
+//                if (quizName.getText().toString().equalsIgnoreCase("aqua city")) {
+//                    context.startActivity(new Intent(context, AquaCity.class));
+//                }
             }
         });
-
     }
 
 }
