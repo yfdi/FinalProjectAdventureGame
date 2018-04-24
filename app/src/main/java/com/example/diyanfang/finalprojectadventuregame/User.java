@@ -11,6 +11,9 @@ public class User {
     public String password;
     public int level;
 
+    public User() {
+    }
+
     public User(String email, String password, int level) {
         this.email = email;
         this.password = password;

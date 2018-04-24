@@ -24,7 +24,6 @@ public class QuizViewHolder extends RecyclerView.ViewHolder {
     public QuizViewHolder(View itemView, final Context context) {
         super(itemView);
         cardView = (CardView) itemView.findViewById(R.id.card_view);
-
         quizImage = (ImageView) itemView.findViewById(R.id.quiz_image);
         quizName = (TextView) itemView.findViewById(R.id.quiz_name);
         aboutThisCity = (TextView) itemView.findViewById(R.id.about_this_city);

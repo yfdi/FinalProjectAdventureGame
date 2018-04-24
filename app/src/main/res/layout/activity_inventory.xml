@@ -48,8 +48,6 @@
 
     </RadioGroup>
 
-
-
     <RelativeLayout
         android:id="@+id/buttons"
         android:layout_width="match_parent"
