@@ -2,24 +2,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/add"
-        android:title="Add"
-        android:icon="@android:drawable/ic_menu_add"
-        app:showAsAction="always"
-        />
-
-    <item
-        android:id="@+id/share"
-        android:icon="@android:drawable/ic_menu_share"
-        android:title="Share"
-        app:showAsAction="always"
-        />
-
-    <item
-        android:id="@+id/save"
-        android:icon="@android:drawable/ic_menu_save"
-        android:title="Save"
-        app:showAsAction="always"
-        />
+    <group>
+        <item android:id="@+id/scissors"
+            android:title="Scissors"
+            android:src="@drawable/scissors"
+            />
+        <item android:id="@+id/junk"
+            android:title="Junk"
+            android:src="@drawable/spanner"
+            />
+        <item android:id="@+id/gold"
+            android:title="Gold"
+            android:src="@drawable/close_gold_city"
+            />
+        <item android:id="@+id/sandwich"
+            android:title="Sandwich"
+            />
+        <item android:id="@+id/water"
+            android:title="Water"
+            android:src="@drawable/aqua_city"
+            />
+        <item android:id="@+id/compass"
+            android:title="Compass"
+            />
+    </group>
 </menu>

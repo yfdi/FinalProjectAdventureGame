@@ -12,6 +12,7 @@ public class AquaCity extends AppCompatActivity {
 
     ImageView manyDolphin;
     Button nextButton;
+    int resquestCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,4 +35,5 @@ public class AquaCity extends AppCompatActivity {
         Quiz q = (Quiz) quizIntent.getSerializableExtra(Keys.QUIZ);
 
     }
+
 }

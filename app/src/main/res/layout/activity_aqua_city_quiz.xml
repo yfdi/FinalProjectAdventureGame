@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="#2774BD"
     tools:context="com.example.diyanfang.finalprojectadventuregame.AquaCityQuiz">
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,35 +22,13 @@
         android:layout_height="wrap_content"
         android:src="@drawable/dolphin_tangled"/>
 
-    <RelativeLayout
+    <android.support.v7.view.menu.ListMenuItemView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView">
-
-        <ImageView
-            android:id="@+id/spanner"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/spanner" />
-
-        <ImageView
-            android:id="@+id/gear"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_toRightOf="@+id/spanner"
-            android:src="@drawable/gear" />
-
-        <ImageView
-            android:id="@+id/scissors"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_toRightOf="@+id/gear"
-            android:src="@drawable/scissors" />
-
-
-    </RelativeLayout>
+        android:layout_alignBottom="@id/dolphin_tangled">
+        <item android:id="@+id/scissors"
+            android:src="@drawable/scissors"/>
+    </android.support.v7.view.menu.ListMenuItemView>
 
 
 </RelativeLayout>
