@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -47,28 +48,25 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.menu_main, menu)
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
         getMenuInflater().inflate(R.menu.menu_main, menu);
 
         return super.onCreateOptionsMenu(menu);
     }
 
-    /*@Override
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.add:
-                quizzes.add(getRandomQuiz());
-                quizAdapter.notifyDataSetChanged();
-                return true;
-            case R.id.save:
-                Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show();
-            case R.id.share:
-                Toast.makeText(this, "Share it baby", Toast.LENGTH_SHORT).show();
+            case R.id.inventory:
+                Intent intent = new Intent(this, Inventory.class);
+                startActivity(intent);
+            case R.id.hint:
+                Toast.makeText(this, "No need for a hint, you can do it!", Toast.LENGTH_SHORT).show();
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }*/
+    }
 
     private Quiz getRandomQuiz() {
         int num = (int) (Math.random() * 5);

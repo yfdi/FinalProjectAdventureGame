@@ -3,27 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <group>
-        <item android:id="@+id/scissors"
-            android:title="Scissors"
-            android:src="@drawable/scissors"
+        <item android:id="@+id/inventory"
+            android:title="Inventory"
+            android:src="@drawable/gear"
             />
-        <item android:id="@+id/junk"
-            android:title="Junk"
+        <item android:id="@+id/hint"
+            android:title="Hint"
             android:src="@drawable/spanner"
-            />
-        <item android:id="@+id/gold"
-            android:title="Gold"
-            android:src="@drawable/close_gold_city"
-            />
-        <item android:id="@+id/sandwich"
-            android:title="Sandwich"
-            />
-        <item android:id="@+id/water"
-            android:title="Water"
-            android:src="@drawable/aqua_city"
-            />
-        <item android:id="@+id/compass"
-            android:title="Compass"
             />
     </group>
 </menu>
