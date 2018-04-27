@@ -45,8 +45,10 @@
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/scissors"
                 android:layout_column="2"
                 android:text="Use"
+                android:onClick="scissorsClick"
                 android:gravity="center"
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
@@ -69,8 +71,10 @@
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/junk"
                 android:layout_column="2"
                 android:text="Use"
+                android:onClick="junkClick"
                 android:gravity="center"
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
@@ -93,7 +97,9 @@
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/gold"
                 android:layout_column="2"
+                android:onClick="goldClick"
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
@@ -117,7 +123,9 @@
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/sandwich"
                 android:layout_column="2"
+                android:onClick="sandwichClick"
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
@@ -141,7 +149,9 @@
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/compass"
                 android:layout_column="2"
+                android:onClick="compassClick"
                 android:text="Use"
                 android:gravity="center"
                 android:padding="3dip"
@@ -165,8 +175,10 @@
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
             <TextView
+                android:id="@+id/water"
                 android:layout_column="2"
                 android:gravity="center"
+                android:onClick="waterClick"
                 android:text="Use"
                 android:padding="3dip"
                 style="@style/InventoryTheme"/>
